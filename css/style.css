@@ -1,0 +1,34 @@
+    h1{margin: 0;padding: 0;}
+.layout{margin: 0 auto; width:90%;background: url("../img/bg.jpg"); }
+.layout>div{width: 100%;text-align: center;}
+.header{height: 190px;padding: 2px;font:36px bold;}
+
+.content{overflow: hidden;margin-top: 20px;}
+    #content_left{width: 15%;float: left;padding-left: 30px;}
+        .nav{margin-top: 5px;height: 300px;}
+            .nav_head{}
+            .nav_content{}
+                #nav_content li{list-style: none;font:20px bold;text-align: left;height: 30px;}
+                #nav_content li:hover{cursor:pointer;font: blue;}
+                #nav_content i{float: right;}
+
+    #content_right{width: 80%;float: left;}
+           #content_right iframe{width: 100%;height: 800px; min-height:700px;overflow: hidden;border: none; }
+.footer{height: 20px;}
+   .inner_body{width: 85%;margin: -3px auto;text-align: left;overflow:auto;}
+   .inner_body > div{margin-left: -20px;}
+    .inner_body h2{text-align: center;font-size: 32px;margin-bottom: 10px; margin-top:5px;}
+    .inner_body p{text-align: left;text-indent: 5px;}
+    .inner_body ol{text-align: center;margin-top: 50px;}
+    .inner_body li{list-style: none;height: 30px;margin: 2px;}
+    .inner_pic {text-align: center;}
+    .inner_content{margin-top: 3px;}
+
+
+/*Contact Me页面*/
+    .Me_content{margin: 0 auto;width:80%;margin-top: 20px;}
+    .Me_left{float: left;margin-right: 5px;}
+    .Me_left label{text-weight:bold;}
+    .Me_right{float: left;}
+
+    .home{background: url("../img/HomeBg.jpg") no-repeat; overflow: hidden;}

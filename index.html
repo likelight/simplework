@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Lily's Home</title>
+    <link  rel="stylesheet" href="css/style.css"  type="text/css" charset="utf-8">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css">
+    <link href="favicon.ico" rel="Shortcut Icon" />
+    <script type="text/javascript">
+         $(document).ready(function(){
+           var dom = $("#nav_content li"); 
+             dom.click(function(){
+                var num = $(this).index();
+                 
+                 switch (num)
+                 {
+                     case 0:
+                     {
+                         $("#content_frame")[0].src ="HomePage.html";
+                     }
+                     break;
+                     case 1:
+                     {
+                        
+                         $("#content_frame")[0].src ="MyHomeTown.html";
+                     }
+                     break;
+                     case 2:
+                     {
+                         $("#content_frame")[0].src = "MySchool.html";
+                     }
+                     break;
+                     case 3:
+                     {
+                         $("#content_frame")[0].src = "MyCollege.html";
+                     }
+                     break;
+                     case 4:
+                     {
+                         $("#content_frame")[0].src = "MyHomework.html";
+                     }
+                     break;
+                     case 5:
+                     {
+                         $("#content_frame")[0].src = "MyAlbum.html";
+                     }
+                         break;
+                     case 6:
+                     {
+                         $("#content_frame")[0].src = "MyVideo.html";
+                     }
+                     break;
+
+                     case 7:
+                     {
+                         $("#content_frame")[0].src = "ContactMe.html";
+                     }
+                     break;
+                 }
+             });  
+        });
+    </script>
+</head>
+<body>
+<div class="layout">
+	<div class="header">
+		<!-- todo 使用滚动的slider展示图片 -->
+        <img src="img/head_logo.png" alt="Lily's Home">
+	</div>
+	<div class="content">
+		<div id="content_left">
+            <div class="nav">
+                <div id="nav_head"></div>
+                <div id="nav_content">
+                 <ul class="nav nav-list  " style="max-width: 260px;">
+                     <li id="nav0" >
+                         <a href="#" >
+                               首页
+                             <i class="icon-chevron-right"></i>
+                         </a>
+                     </li>
+                     <li id="nav1" >
+                         <a href="#" >
+                             <i class="icon-chevron-right"></i>
+                             我的家乡
+                         </a>
+                     </li>
+                     <li id="nav2">
+                         <a href="#" >
+                             我的学校
+                             <i class="icon-chevron-right"></i>
+                         </a>
+                     </li>
+                     <li id="nav3">
+                         <a href="#" >
+                             我的学院
+                             <i class="icon-chevron-right"></i>
+                         </a>
+                     </li>
+                     <li id="nav4">
+                         <a href="#" >
+                             我的作业
+                             <i class="icon-chevron-right"></i>
+                         </a>
+                     </li>
+                     <li id="nav5">
+                         <a href="#" >
+                             我的相册
+                             <i class="icon-chevron-right"></i>
+                         </a>
+                     </li>
+                     <li id="nav4">
+                         <a href="#" >
+                             我的视频
+                             <i class="icon-chevron-right"></i>
+                         </a>
+                     </li>
+                     <li id="nav5">
+                         <a href="#" >
+                             联系我
+                             <i class="icon-chevron-right"></i>
+                         </a>
+                     </li>
+                 </ul>
+
+                </div>
+            </div>
+		</div>
+		<div id="content_right">
+            <iframe id="content_frame" src="HomePage.html" >
+
+            </iframe>
+		</div>
+	</div>
+	<div class="footer" height="100px">
+        <embed src="rsc/追梦人.mp3" width="32" height="32" hidden="true" loop="true"></embed>
+	</div>
+</div>
+</body>
+</html>
